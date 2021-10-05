@@ -17,7 +17,7 @@ const Search = () => {
 
     setQuery(e.target.value);
     axios
-      .get(`http://www.omdbapi.com/?s=${e.target.value}&apikey=6a6bd0f4}`)
+      .get(`http://www.omdbapi.com/?s=${e.target.value}&apikey=6a6bd0f4`)
       .then((res) => setResults(res.data.Search))
       .catch(error => console.log(error))
   };
